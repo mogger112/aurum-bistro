@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Аурум бистро</title>
+<meta name="description" content="Аурум бистро — кофейня и бистро в Махачкале, ул. Буйнакского, 21. Меню, заказ на доставку, самовывоз и к столику.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,500;0,600;1,400;1,500&family=Forum&family=Great+Vibes&family=Manrope:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav" id="top">
+  <div class="nav__in">
+    <a class="logo" href="#top" aria-label="Аурум бистро — наверх">
+      <span class="logo__script">Aurum</span><span class="logo__sub">бистро</span>
+    </a>
+    <nav class="nav__links" aria-label="Разделы">
+      <a href="#menu">Меню</a>
+      <a href="#hall">Зал</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <button class="cart-btn" type="button" data-open-cart aria-label="Открыть заказ">
+      <span>Заказ</span>
+      <span class="cart-btn__count" data-cart-count>0</span>
+    </button>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <canvas class="hero__light" aria-hidden="true"></canvas>
+    <div class="hero__in wrap">
+      <div class="hero__text">
+        <p class="eyebrow">Махачкала · Буйнакского, 21</p>
+        <h1 class="hero__title">Аурум<span class="hero__script">bistro</span></h1>
+        <p class="hero__lede">Кофейня и бистро в тихом зале под хрустальной люстрой. Варим кофе на любом молоке, готовим мезе, пасту и десерты, а коктейли называем в честь картин.</p>
+        <div class="hero__cta">
+          <a class="btn btn--wine" href="#menu">Собрать заказ</a>
+          <a class="btn btn--ghost" href="tel:+79280644646">+7 (928) 064-46-46</a>
+        </div>
+        <ul class="facts">
+          <li><b>до 00:00</b><span>ежедневно</span></li>
+          <li><b>5,0</b><span>79 оценок на Яндекс Картах</span></li>
+          <li><b>1 500–2 000 ₽</b><span>средний чек</span></li>
+          <li><b>3 способа</b><span>доставка, самовывоз, к столику</span></li>
+        </ul>
+      </div>
+      <figure class="hero__art">
+        <div class="frame frame--big"><img src="img/interior.jpg" alt="Зал Аурума: хрустальная люстра, картина с пастухом и овцами, стол из тёмного дерева" width="960" height="1280"></div>
+        <figcaption class="plaque plaque--wall">
+          <strong>Зал «Аурума»</strong>
+          <span>Хрусталь, холст, тёмное дерево</span>
+          <span class="plaque__meta">Aurum, лат. — золото</span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section class="menu" id="menu">
+    <div class="wrap">
+      <div class="script-rule" aria-hidden="true"><span>menu</span></div>
+      <h2 class="section-title">Меню и заказ</h2>
+      <p class="section-lede">Добавляйте блюда и напитки в заказ, затем выберите доставку, самовывоз или подачу к столику. Цены в рублях.</p>
+    </div>
+
+    <div class="chips" data-chips>
+      <div class="chips__in wrap" data-chips-list></div>
+    </div>
+
+    <div class="wrap">
+      <section class="featured" aria-labelledby="featured-title">
+        <p class="eyebrow">Экспозиция</p>
+        <h3 class="group-title" id="featured-title">Фирменное</h3>
+        <div class="pieces" data-featured></div>
+      </section>
+
+      <div data-menu></div>
+
+      <p class="allergy">Предупредите нас, если у вас аллергия на какой-то продукт: напишите об этом в комментарии к заказу.</p>
+    </div>
+  </section>
+
+  <!-- HALL -->
+  <section class="hall" id="hall">
+    <div class="wrap">
+      <p class="eyebrow">Зал</p>
+      <h2 class="section-title">Приходите вечером</h2>
+      <p class="section-lede">Тёмные стены, свет от люстры и свечи на столах. Гости на Яндекс Картах советуют коктейль с юдзу, пломбиром и пищевым золотом и фирменный ромашковый крем-брюле.</p>
+      <div class="salon">
+        <figure class="salon__a"><div class="frame"><img src="img/g13.jpg" alt="Вечерний зал со свечой на столе" loading="lazy"></div></figure>
+        <figure class="salon__b"><div class="frame"><img src="img/g15.jpg" alt="Коктейль в бокале на мраморном столе" loading="lazy"></div></figure>
+        <figure class="salon__c"><div class="frame"><img src="img/g1.jpg" alt="Блюдо с зеленью и томатами на тёмной тарелке" loading="lazy"></div></figure>
+        <figure class="salon__d"><div class="frame"><img src="img/g14.jpg" alt="Два лимонада со льдом" loading="lazy"></div></figure>
+        <figure class="salon__e"><div class="frame"><img src="img/g4.jpg" alt="Десерт в стакане и напиток" loading="lazy"></div></figure>
+        <figure class="salon__f"><div class="frame"><img src="img/g11.jpg" alt="Вход в Аурум с улицы" loading="lazy"></div></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTS -->
+  <section class="contacts" id="contacts">
+    <div class="wrap contacts__grid">
+      <div>
+        <p class="eyebrow">Контакты</p>
+        <h2 class="section-title">Буйнакского, 21</h2>
+        <p class="section-lede">В 50 метрах от Кумыкского театра.</p>
+        <a class="btn btn--ghost" href="https://yandex.ru/maps/-/CXB0iTPp" target="_blank" rel="noopener">Открыть в Яндекс Картах</a>
+      </div>
+      <dl class="info">
+        <div><dt>Телефон</dt><dd><a href="tel:+79280644646">+7 (928) 064-46-46</a></dd></div>
+        <div><dt>Часы</dt><dd>Ежедневно, до 00:00</dd></div>
+        <div><dt>Оплата</dt><dd>Карта, наличные, СБП</dd></div>
+        <div><dt>Ещё</dt><dd>Доставка, еда навынос, кофе с собой</dd></div>
+      </dl>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__in">
+    <span class="logo__script">Aurum</span>
+    <span>Аурум бистро · Махачкала, ул. Буйнакского, 21</span>
+  </div>
+</footer>
+
+<!-- Mobile cart bar -->
+<button class="cart-bar" type="button" data-open-cart hidden>
+  <span>Ваш заказ · <span data-cart-count>0</span></span>
+  <b data-cart-sum>0 ₽</b>
+</button>
+
+<!-- Cart drawer -->
+<div class="drawer" data-drawer hidden>
+  <div class="drawer__scrim" data-close-cart></div>
+  <aside class="drawer__panel" role="dialog" aria-modal="true" aria-labelledby="drawer-title">
+    <header class="drawer__head">
+      <h2 id="drawer-title" data-drawer-title>Ваш заказ</h2>
+      <button class="icon-btn" type="button" data-close-cart aria-label="Закрыть">✕</button>
+    </header>
+
+    <!-- step: cart -->
+    <div class="drawer__body" data-step="cart">
+      <ul class="lines" data-lines></ul>
+      <div class="empty" data-empty>
+        <p class="empty__script">empty</p>
+        <p>В заказе пока ничего нет. Нажмите «+» рядом с блюдом или напитком в меню.</p>
+      </div>
+    </div>
+
+    <!-- step: checkout -->
+    <form class="drawer__body form" data-step="checkout" hidden novalidate>
+      <fieldset class="seg">
+        <legend>Как получить</legend>
+        <label><input type="radio" name="type" id="f-type-delivery" value="delivery" checked><span>Доставка</span></label>
+        <label><input type="radio" name="type" id="f-type-pickup" value="pickup"><span>Самовывоз</span></label>
+        <label><input type="radio" name="type" id="f-type-hall" value="hall"><span>К столику</span></label>
+      </fieldset>
+
+      <div class="field">
+        <label for="f-name">Имя</label>
+        <input id="f-name" name="name" autocomplete="given-name" required>
+        <p class="field__err" data-err="name"></p>
+      </div>
+      <div class="field">
+        <label for="f-phone">Телефон</label>
+        <input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+7 (___) ___-__-__" required>
+        <p class="field__err" data-err="phone"></p>
+      </div>
+      <div class="field" data-for="delivery">
+        <label for="f-address">Адрес доставки</label>
+        <input id="f-address" name="address" autocomplete="street-address" placeholder="Улица, дом, подъезд, квартира">
+        <p class="field__err" data-err="address"></p>
+        <p class="field__hint">Стоимость и время доставки администратор подтвердит по телефону.</p>
+      </div>
+      <div class="field" data-for="hall" hidden>
+        <label for="f-table">Номер столика</label>
+        <input id="f-table" name="table" inputmode="numeric" placeholder="Например, 4">
+        <p class="field__err" data-err="table"></p>
+      </div>
+      <div class="field" data-not="hall">
+        <label for="f-time">Когда</label>
+        <select id="f-time" name="time"></select>
+      </div>
+      <fieldset class="seg seg--small">
+        <legend>Оплата</legend>
+        <label><input type="radio" name="pay" id="f-pay-card" value="Картой" checked><span>Картой</span></label>
+        <label><input type="radio" name="pay" id="f-pay-sbp" value="СБП"><span>СБП</span></label>
+        <label><input type="radio" name="pay" id="f-pay-cash" value="Наличными"><span>Наличными</span></label>
+      </fieldset>
+      <div class="field">
+        <label for="f-comment">Комментарий</label>
+        <textarea id="f-comment" name="comment" rows="3" placeholder="Аллергии, без лука, сдача с 5 000…"></textarea>
+      </div>
+    </form>
+
+    <!-- step: done -->
+    <div class="drawer__body done" data-step="done" hidden>
+      <p class="done__script">merci</p>
+      <h3 class="done__title">Заказ <span data-order-no></span> собран</h3>
+      <p>Осталось отправить его нам. Нажмите «Отправить в WhatsApp» — откроется чат с готовым текстом заказа. Если не получится, позвоните по номеру <b>+7 (928) 064-46-46</b> и назовите номер заказа.</p>
+      <pre class="done__text" data-order-text></pre>
+      <div class="done__actions">
+        <a class="btn btn--wine" data-wa target="_blank" rel="noopener">Отправить в WhatsApp</a>
+        <button class="btn btn--ghost" type="button" data-copy>Скопировать текст</button>
+      </div>
+    </div>
+
+    <footer class="drawer__foot" data-foot>
+      <div class="total"><span>Итого</span><b data-cart-sum>0 ₽</b></div>
+      <div class="drawer__actions">
+        <button class="btn btn--ghost" type="button" data-back hidden>Назад</button>
+        <button class="btn btn--wine btn--wide" type="button" data-next>Оформить</button>
+      </div>
+    </footer>
+  </aside>
+</div>
+
+<!-- Options picker -->
+<div class="picker" data-picker hidden>
+  <div class="drawer__scrim" data-close-picker></div>
+  <div class="picker__card" role="dialog" aria-modal="true" aria-labelledby="picker-title">
+    <h3 id="picker-title" data-picker-title></h3>
+    <div data-picker-body></div>
+    <div class="picker__foot">
+      <button class="btn btn--ghost" type="button" data-close-picker>Отмена</button>
+      <button class="btn btn--wine" type="button" data-picker-add>Добавить</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" data-toast role="status" aria-live="polite" hidden></div>
+
+<script src="app.js"></script>
+</body>
+</html>
